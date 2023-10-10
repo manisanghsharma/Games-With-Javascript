@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --bg-color: #121B24;
+    --main-color: #1B2832;
+    --cross-color: #5DFDCB;
+    --circle-color: rgb(255, 68, 68);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+
+}
+
+#js{
+    width: 60px;
+    position: relative;
+    top: 7px;
+    left: 10px;
+}
+
+#reset{
+    color: var(--cross-color);
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s;
+
+}
+
+#reset:hover{
+    color: var(--bg-color);
+    background-color: var(--cross-color);
+    box-shadow: var(--cross-color) 0px 1px 15px;
+}
+
+#boxes{
+    margin: 20px 0;
+    display: grid;
+    grid-template-rows: repeat(3, 120px);
+    grid-template-columns: repeat(3, 120px);
+}
+
+.box{
+    background: var(--main-color);
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx.bx-x{
+    font-size: 150px;
+    color: var(--cross-color);
+}
+
+.bx.bx-circle{
+    font-size: 92px;
+    color: var(--circle-color);
+}
+
+#win2{
+    top: 12px;
+    font-size: 70px;
+    position: relative;
+}
+
+#win{
+    position: relative;
+    left: 5px;
+    top: 20px;
+    font-size: 90px;
+    
+}
